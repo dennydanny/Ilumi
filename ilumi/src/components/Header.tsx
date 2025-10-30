@@ -14,7 +14,7 @@ import {
 export function Header() {
   return (
     <NavigationMenu >
-      <NavigationMenuList className="flex-wrap">
+      <NavigationMenuList className="flex-wrap font-bold">
         <NavigationMenuItem>
           <NavigationMenuTrigger>Início</NavigationMenuTrigger>
           <NavigationMenuContent>
