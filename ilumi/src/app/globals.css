@@ -177,3 +177,33 @@
     font-style: normal;
   }
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* faixa indo para a esquerda (padrão) */
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 40s linear infinite;
+  /* mais lento; ajuste se quiser */
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* faixa invertida usando animation-direction: reverse */
+.animate-marquee-reverse {
+  display: flex;
+  width: 200%;
+  animation: marquee 40s linear infinite reverse;
+  /* mesma animação, porém invertida */
+  will-change: transform;
+  transform: translateZ(0);
+}
