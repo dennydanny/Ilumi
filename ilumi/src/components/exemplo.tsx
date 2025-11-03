@@ -10,15 +10,19 @@ import { CircleCheckBig } from "lucide-react";
 export function Exemplo() {
   return (
     <div className="bg-zinc-800 flex justify-center">
-      <section className=" montserrat flex-col text-center gap-8 max-w-4xl ">
-        <h1 className="text-6xl font-medium tracking-tight text-zinc-50 leading-tight text-balance mt-12">
-          O problema não é você. É a <br/> falta de {""}
-          <span className="relative font-extrabold ">
-            estratrégia
+      <section className="montserrat flex-col text-center gap-8 max-w-4xl ">
+        <h1 className="text-6xl tracking-tight text-zinc-50 leading-tight text-balance mt-12">
+          O problema não é você. É a falta de {""}
+          <span className="relative font-extrabold bg-zinc-700 ">
+            estratrégia.
             <br />
           </span>
         </h1>
-        <div className="flex flex-wrap gap-6 justify-center mt-12 mb-12">
+        <p className="text-white text-5xl font-extrabold mt-9">
+          {" "}
+          SABEMOS QUE VOCÊ JÁ TENTOU :
+        </p>
+        <div className="flex  md:flex-row flex-col gap-6 justify-center mt-12 mb-12">
           {/* Card 1 */}
           <Card className="w-96 bg-red-500 text-zinc-50">
             <CardHeader>
@@ -29,7 +33,7 @@ export function Exemplo() {
             </CardHeader>
             <CardContent className="text-3xl text-left">
               <p>
-                postagens <br /> constantes mas acabar sem ideia
+                postagens <br /> constantes mas acabar sem ideias
               </p>
             </CardContent>
           </Card>

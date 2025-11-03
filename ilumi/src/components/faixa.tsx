@@ -23,7 +23,7 @@ export function Faixa() {
 
       {/* TEXTO CENTRAL */}
       <div>
-        <h1 className="montserrat text-zinc-700 text-7xl text-center p-24">
+        <h1 className="montserrat text-zinc-700 text-7xl leading-tight text-center p-24">
           A maioria das empresas investe <span className=" font-extrabold">tempo, energia e dinheiro </span>{" "}
           no digital sem saber o que realmente funciona.
         </h1>

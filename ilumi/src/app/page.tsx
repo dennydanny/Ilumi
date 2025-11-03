@@ -2,6 +2,7 @@ import { Exemplo } from "@/components/exemplo";
 import { Faixa } from "@/components/faixa";
 import { Header } from "@/components/Header";
 import { Intro } from "@/components/Intro";
+import { Parceria } from "@/components/parceria";
 import Image from "next/image";
 
 export default function Home() {
@@ -34,7 +35,12 @@ export default function Home() {
         <div>
           <Exemplo />
         </div>
-        <div><Faixa/></div>
+        <div>
+          <Faixa />
+        </div>
+        <div className="flex flex-col text-pretty md:text-balance text-base max-w-7xl mx-auto w-full font-medium sm:flex-row mt-20">
+          <Parceria />
+        </div>
       </main>
     </div>
   );
