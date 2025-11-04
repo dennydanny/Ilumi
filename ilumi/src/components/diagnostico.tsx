@@ -13,7 +13,7 @@ const etapas = [
     texto1:
       "Definimos uma estratégia personalizada com base nos seus objetivos.",
     texto2:
-      "Criamos um plano de ação que une branding, conteúdo e performance — tudo com foco em resultados mensuráveis.",
+      "Criamos um plano de ação que une branding, conteúdo e performance tudo com foco em resultados mensuráveis.",
     imagemEsquerda: true,
   },
   {

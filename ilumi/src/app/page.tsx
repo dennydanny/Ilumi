@@ -4,7 +4,7 @@ import { Faixa } from "@/components/faixa";
 import { Header } from "@/components/Header";
 import { Intro } from "@/components/Intro";
 import { Parceria } from "@/components/parceria";
-import Metodologia from "@/components/ui/metodologia";
+import Metodologia from "@/components/metodologia";
 import Image from "next/image";
 
 export default function Home() {
