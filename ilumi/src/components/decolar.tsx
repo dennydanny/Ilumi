@@ -15,7 +15,7 @@ export function Decolar() {
           </span>
         </h1>
 
-        <h2 className="text-4xl leading-tight mt-4">
+        <h2 className="text-4xl font-light leading-tight mt-4">
           Responda um formulário rápido e receba uma proposta estratégica
           pensada só pra você.
         </h2>
@@ -25,7 +25,7 @@ export function Decolar() {
             asChild
             className="bg-yellow-300 border-dashed border border-amber-400 hover:bg-yellow-400 text-zinc-700 text-2xl font-extrabold rounded-full px-8 py-6 transition-all duration-300 shadow-md hover:shadow-lg"
           >
-            <Link href="/proposta">QUERO RECEBER UMA PROPOSTA</Link>
+            <Link href="/proposta">DECOLAR MINHA MARCA</Link>
           </Button>
 
           <Button
