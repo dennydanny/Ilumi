@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/card";
 import { CircleCheckBig } from "lucide-react";
 
-export function Exemplo() {
+export function Problema() {
   return (
     <div className="bg-zinc-800 flex justify-center">
       <section className="montserrat flex-col text-center gap-8 max-w-4xl ">

@@ -1,11 +1,16 @@
 import { Diagnostico } from "@/components/diagnostico";
-import { Exemplo } from "@/components/exemplo";
+import { Problema } from "@/components/problema";
 import { Faixa } from "@/components/faixa";
 import { Header } from "@/components/Header";
 import { Intro } from "@/components/Intro";
 import { Parceria } from "@/components/parceria";
 import Metodologia from "@/components/metodologia";
 import Image from "next/image";
+import Resultados from "@/components/resultados";
+import VideoCards from "@/components/videoCards";
+import Clientes from "@/components/clientes";
+import Example from "@/components/example";
+import { Decolar } from "@/components/decolar";
 
 export default function Home() {
   return (
@@ -35,7 +40,7 @@ export default function Home() {
                      border-24 border-white z-50"
         ></div>
         <article>
-          <Exemplo />
+          <Problema />
           <div>
             <Faixa />
           </div>
@@ -48,7 +53,26 @@ export default function Home() {
           <div className="flex flex-col text-pretty md:text-balance text-base max-w-7xl mx-auto w-full font-medium sm:flex-row mt-20">
             <Diagnostico />
           </div>
+          <div>
+            <Resultados />
+          </div>
         </article>
+        <section>
+          <div>
+            <VideoCards />
+          </div>
+          <div>
+            <Clientes />
+          </div>
+          <div>
+            <Example />
+          </div>
+        </section>
+        <footer>
+          <div className="flex flex-col text-pretty md:text-balance text-base max-w-7xl mx-auto w-full font-medium sm:flex-row mt-20">
+            <Decolar />
+          </div>
+        </footer>
       </main>
     </div>
   );

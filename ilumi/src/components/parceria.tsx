@@ -8,7 +8,7 @@ export function Parceria() {
           <h1 className="text-6xl font-extrabold tracking-tight text-balance">
             Seremos seus parceiros de investimento.
           </h1>
-          <p className="font-thin text-5xl mt-4">
+          <p className="font-thin text-4xl mt-4">
             Nossa metodologia validada em diferentes nichos já ajudou empresas
             de todos os portes a vender mais, atrair melhor e se posicionar como
             referência na região.

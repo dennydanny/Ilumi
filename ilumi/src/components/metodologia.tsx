@@ -2,7 +2,7 @@
 export default function Metodologia() {
   return (
     <div>
-      <section className="relative  overflow-hidden ">
+      <section className="relative  overflow-hidden mt-16">
         <div className="relative text-left">
           <p className="text-[16rem] font-extrabold text-orange-500 leading-none select-none">
             METODOLOGIA
