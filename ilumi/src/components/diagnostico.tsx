@@ -1,32 +1,40 @@
 "use client";
 
+
+import Image from "next/image";
+
 const etapas = [
   {
     titulo: "Diagnóstico",
     texto1: "Analisamos profundamente seu negócio, concorrentes e público-alvo e descobrimos o que impede seu crescimento, identificando oportunidades que podem colocar sua marca em destaque.",
     imagemEsquerda: false,
+    imagem: "/image-cards/diagnostico.jpg", 
   },
   {
     titulo: "Planejamento",
     texto1:
       "Definimos uma estratégia personalizada com base nos seus objetivos e criamos um plano de ação que une branding, conteúdo e performance tudo com foco em resultados mensuráveis.",
     imagemEsquerda: true,
+    imagem: "/image-cards/planejamento.jpg", 
   },
   {
     titulo: "Aprovação",
     texto1: "Apresentamos o plano de forma clara e visual, você acompanha cada etapa, aprova direcionamentos e participa das decisões estratégicas com total transparência.",
     imagemEsquerda: false,
+    imagem: "/image-cards/aprovacao.jpg",
   },
   {
     titulo: "Execução",
     texto1:
       "Nossa equipe coloca em prática todo o plano: identidade visual, campanhas, conteúdos e anúncios. Entregamos uma presença digital completa e profissional para sua marca.",
     imagemEsquerda: true,
+    imagem: "/image-cards/execucao.jpg", //TODO: falta essa imagem
   },
   {
     titulo: "Monitoramento",
     texto1: "Acompanhamos, ajustamos e otimizamos cada resultado, relatórios mensais e métricas em tempo real mostram o impacto das ações e garantem evolução contínua.",
     imagemEsquerda: false,
+    imagem: "/image-cards/monitoramento.jpg", 
   },
 ];
 
@@ -52,7 +60,13 @@ export function Diagnostico() {
             </p>
           </div>
           {/* Figura */}
-          <figure className="bg-amber-500 flex flex-col gap-6 rounded-xl shadow-sm p-40" />
+          <Image
+            src={etapa.imagem}
+            alt={`Imagem para ${etapa.titulo}`}
+            width={400}
+            height={300}
+            className="rounded-xl shadow-sm"
+          />
         </article>
       ))}
     </main>

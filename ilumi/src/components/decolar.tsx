@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon } from "lucide-react";
+import Image from "next/image";
 
 export function Decolar() {
   return (
@@ -36,10 +37,16 @@ export function Decolar() {
             <ArrowRightIcon className="h-12 w-12" strokeWidth={4} />
           </Button>
         </div>
-      </div>
+      </div> 
+      <Image
+        src="/image-cards/parceiros.jpg"
+        alt="Imagem de parceiros"
+        width={450}
+        height={400}
+        className="rounded-xl shadow-sm"
+      />
+      
 
-      {/* Figura ao lado */}
-      <figure className="bg-amber-500 shrink-0 rounded-2xl shadow-lg p-50" />
     </section>
   );
 }
