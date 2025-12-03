@@ -20,8 +20,8 @@ export default function Home() {
         <header className="flex flex-row justify-between max-w-7xl mx-auto w-full items-center mt-4">
           <Image
             className="dark:invert"
-            src="/next.svg"
-            alt="Next.js logo"
+            src="/uri-logo.svg"
+            alt="Logo da Uri"
             width={100}
             height={20}
             priority
