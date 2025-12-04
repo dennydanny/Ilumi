@@ -1,5 +1,7 @@
 "use client";
 
+import Image from 'next/image';
+
 export function Parceria() {
   return (
     <main>
@@ -14,7 +16,13 @@ export function Parceria() {
             referência na região.
           </p>
         </div>
-        <figure className="bg-amber-500 flex flex-col gap-6 rounded-xl py-6 shadow-sm w-96 h-96" />
+          <Image
+          src="/image-cards/parceiros.jpg"
+          alt="Imagem de um foguete decolando"
+          width={400}
+          height={300}
+          className="rounded-xl shadow-sm"
+        />
       </article>
       
     </main>
