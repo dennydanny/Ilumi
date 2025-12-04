@@ -1,19 +1,33 @@
 "use client";
+
 export default function Metodologia() {
   return (
-    <div>
-      <section className="relative  overflow-hidden mt-16">
-        <div className="relative text-left">
-          <p className="text-[16rem] font-extrabold text-orange-500 leading-none select-none">
-            METODOLOGIA
-          </p>
-          <span
-            className="absolute text-outline top-1/2 left-1/2 -translate-x-1/2 -translate-y-[50%] text-[5rem] font-extrabold"
-          >
-            Conheça nossa
-          </span>
-        </div>
-      </section>
-    </div>
+    <section className="relative overflow-hidden mt-12 md:mt-20  md:px-8">
+      <div className="relative text-center md:text-left">
+        {/* Texto de fundo */}
+        <p
+          className="
+            font-extrabold text-orange-500 leading-none select-none 
+            text-[4rem]
+            md:text-[8rem]
+            lg:text-[12rem]
+            xl:text-[16rem]
+          "
+        >
+          METODOLOGIA
+        </p>
+
+        {/* Texto principal */}
+        <span
+          className="
+            absolute inset-0 flex items-center justify-center
+            text-3xl md:text-5xl lg:text-6xl
+            font-extrabold text-outline
+          "
+        >
+          Conheça nossa
+        </span>
+      </div>
+    </section>
   );
 }

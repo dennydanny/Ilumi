@@ -13,14 +13,16 @@ import Example from "@/components/example";
 import { Decolar } from "@/components/decolar";
 import BackToTop from "@/components/BackToTop";
 
-
 export default function Home() {
   return (
-    <div className="flex items-center justify-center font-sans dark:bg-black">
+    <div className="flex justify-center font-sans dark:bg-black">
       <main className="relative flex min-h-screen w-full flex-col bg-white dark:bg-black">
         <header
           id="intro"
-          className="flex flex-row justify-between max-w-7xl mx-auto w-full items-center mt-4"
+          className="flex justify-between items-center gap-4 px-4
+           sm:flex-col
+           md:flex-row md:items-center md:justify-between
+           max-w-7xl mx-auto w-full mt-4"
         >
           <Image
             className="dark:invert"
@@ -32,53 +34,70 @@ export default function Home() {
           />
           <Header />
         </header>
-        <section className="flex flex-col text-pretty md:text-balance text-base max-w-7xl mx-auto w-full font-medium sm:flex-row mt-20">
+        <section
+          className="
+            flex flex-col px-4 mt-12
+            max-w-7xl mx-auto w-full
+            text-base font-medium
+            md:flex-row
+          "
+        >
           <Intro />
         </section>
-
-        {/* ===== BOLA AMARELA ===== */}
         <div
-          className="mx-auto -mb-8 size-20
-                     bg-yellow-400 hover:bg-yellow-500 rounded-full 
-                     transition-all duration-300 hover:shadow-lg 
-                     border-24 border-white z-50"
+          className="
+            mx-auto -mb-25 size-16
+            sm:size-20
+            bg-yellow-400 hover:bg-yellow-500
+            rounded-full transition-all duration-300
+            hover:shadow-lg border-18 border-white z-50
+          "
         />
-
-        <article>
-          <section id="problema">
+        <article className="px-4">
+          <section id="problema" className="mt-16">
             <Problema />
           </section>
-          <div>
+          <div >
             <Faixa />
           </div>
-          <section className="flex flex-col text-pretty md:text-balance text-base max-w-7xl mx-auto w-full font-medium sm:flex-row mt-20">
+          <section
+            className="
+              flex flex-col mt-16
+              max-w-7xl mx-auto w-full
+              md:flex-row
+            "
+          >
             <Parceria />
           </section>
-          <section id="metodologia">
+          <section id="metodologia" className="mt-16">
             <Metodologia />
           </section>
-          <section className="flex flex-col text-pretty md:text-balance text-base max-w-7xl mx-auto w-full font-medium sm:flex-row mt-20">
+          <section
+            className="
+              flex flex-col mt-16
+              max-w-7xl mx-auto w-full
+              md:flex-row
+            "
+          >
             <Diagnostico />
           </section>
-          <section>
+          <section className="mt-16">
             <Resultados />
           </section>
         </article>
-        <section>
-          <div>
-            <VideoCards />
-          </div>
-          <div>
-            <Clientes />
-          </div>
-          <div>
-            <Example />
-          </div>
+        <section className="px-4 mt-20">
+          <VideoCards />
+          <Clientes />
+          <Example />
         </section>
-        <footer>
+        <footer className="px-4 mt-20">
           <div
-            className="flex flex-col text-pretty md:text-balance text-base 
-                       max-w-7xl mx-auto w-full font-medium sm:flex-row mt-20"
+            className="
+              flex flex-col
+              max-w-7xl mx-auto w-full
+              font-medium
+              md:flex-row
+            "
           >
             <Decolar />
           </div>

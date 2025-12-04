@@ -5,6 +5,7 @@ interface Card {
   title: string;
   description: string;
   embedUrl: string;
+  logo?: string;
 }
 
 export default function VideoCards() {
@@ -14,18 +15,19 @@ export default function VideoCards() {
       title: "Fernando Fernandes | Porto Velho",
       description: "Imóveis de alto padrão em Porto Velho",
       embedUrl: "https://www.youtube.com/embed/P58V1zVF67o",
-      //TODO: adicionar logo das emprsa, lado esquerdo do nome
     },
     {
       id: 2,
       title: "Suav | Porto Velho",
-      description: "Esmalteria | Escovaria | Depilação | Podologia | Make | Sobrancelhas",
+      description:
+        "Esmalteria | Escovaria | Depilação | Podologia | Make | Sobrancelhas",
       embedUrl: "https://www.youtube.com/embed/T9Rax2jv5zU",
     },
     {
       id: 3,
       title: "Suav | Porto Velho",
-      description: "Esmalteria | Escovaria | Depilação | Podologia | Make | Sobrancelhas",
+      description:
+        "Esmalteria | Escovaria | Depilação | Podologia | Make | Sobrancelhas",
       embedUrl: "https://www.youtube.com/embed/fqcihkBi70k",
     },
     {
@@ -38,36 +40,54 @@ export default function VideoCards() {
     {
       id: 5,
       title: "Gráfica Imediata",
-      description: "Há 25 anos, sendo referência em qualidade gráfica. Calendários, agendas, livros, pastas, folhetos e muito mais",
+      description:
+        "Há 25 anos, sendo referência em qualidade gráfica. Calendários, agendas, livros, pastas, folhetos e muito mais",
       embedUrl: "https://www.youtube.com/embed/FDWDKfDocEo",
     },
   ];
 
   return (
-    <main className="bg-white text-zinc-800 flex items-center justify-center flex-col py-16 ">
-      <div className="flex gap-8 overflow-x-auto px-8 py-4">
+    <main className="bg-white text-zinc-800 py-12 md:py-16">
+      {/* Mobile = carrossel | Desktop = grid */}
+      <div
+        className="
+          flex gap-6 overflow-x-auto px-4
+          md:grid md:grid-cols-2 lg:grid-cols-3
+          md:gap-8 md:overflow-visible md:px-8
+          max-w-7xl mx-auto
+          scroll-smooth
+        "
+      >
         {cards.map((card) => (
           <div
             key={card.id}
-            className="flex-shrink-0 w-80 bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-200"
+            className="
+              shrink-0 w-72
+              md:w-full
+              bg-white rounded-3xl shadow-lg
+              overflow-hidden border border-gray-200
+              hover:shadow-xl transition
+            "
           >
-            {/* Card Container */}
-            <div className="flex flex-col h-auto">
-              {/* Vídeo dentro do card */}
+            {/* Vídeo Responsivo (16:9 real) */}
+            <div className="relative w-full aspect-video">
               <iframe
                 src={card.embedUrl}
                 title={card.title}
-                className="w-full h-80 rounded-t-3xl"
-                frameBorder="0"
+                className="absolute inset-0 w-full h-full rounded-t-3xl"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
-              
-              {/* Texto dentro do card */}
-              <div className="p-6">
-                <h3 className="font-extrabold text-lg text-zinc-900">{card.title}</h3>
-                <p className="text-sm text-zinc-600 mt-2">{card.description}</p>
-              </div>
+            </div>
+
+            {/* Texto */}
+            <div className="p-5 flex flex-col gap-2">
+              <h3 className="font-extrabold text-base md:text-lg text-zinc-900">
+                {card.title}
+              </h3>
+              <p className="text-sm md:text-base text-zinc-600 leading-snug">
+                {card.description}
+              </p>
             </div>
           </div>
         ))}
