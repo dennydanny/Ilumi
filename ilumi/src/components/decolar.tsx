@@ -26,18 +26,22 @@ export function Decolar() {
             asChild
             className="bg-yellow-300 border-dashed border border-amber-400 hover:bg-yellow-400 text-zinc-700 text-2xl font-extrabold rounded-full px-8 py-6 transition-all duration-300 shadow-md hover:shadow-lg"
           >
-            <Link href="/proposta">DECOLAR MINHA MARCA</Link>
+            <Link href="https://wa.me/5569993837283">DECOLAR MINHA MARCA</Link>
           </Button>
-
           <Button
+            asChild
             size="icon"
-            className="bg-yellow-300 border-dashed border border-amber-400 hover:bg-yellow-500 text-zinc-700 font-bold rounded-full transition-all duration-300 shadow-md hover:shadow-lg px-6 py-6"
+            className="bg-yellow-300 border-dashed border border-amber-400 hover:bg-yellow-500 
+             text-zinc-700 font-bold rounded-full transition-all duration-300 
+             shadow-md hover:shadow-lg px-6 py-6"
             aria-label="Ir para proposta"
           >
-            <ArrowRightIcon className="h-12 w-12" strokeWidth={4} />
+            <Link href="https://wa.me/5569993837283" target="_blank">
+              <ArrowRightIcon className="h-12 w-12" strokeWidth={4} />
+            </Link>
           </Button>
         </div>
-      </div> 
+      </div>
       <Image
         src="/image-cards/parceiros.jpg"
         alt="Imagem de parceiros"
@@ -45,8 +49,6 @@ export function Decolar() {
         height={400}
         className="rounded-xl shadow-sm"
       />
-      
-
     </section>
   );
 }

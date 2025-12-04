@@ -198,6 +198,10 @@
   transform: translateZ(0);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* faixa invertida usando animation-direction: reverse */
 .animate-marquee-reverse {
   display: flex;
